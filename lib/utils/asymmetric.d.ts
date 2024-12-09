@@ -1,3 +1,4 @@
+/// <reference types="node" />
 declare function generateKeypair(passphrase: string): {
     privateKeyPem: string;
     publicKeyPem: string;

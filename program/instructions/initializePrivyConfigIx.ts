@@ -12,6 +12,7 @@ export async function initializePrivyConfigIx(
     .initializePrivyConfig(args.tokensPerSol)
     .accounts({
       owner: accounts.owner,
+      // @ts-ignore
       privyConfig: privyConfigPDA,
       systemProgram: SystemProgram.programId,
     })

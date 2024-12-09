@@ -50,9 +50,7 @@ export default class PrivySdk {
 
     this.authority = authority;
 
-    const provider = new AnchorProvider(connection, wallet, {
-      preflightCommitment: "recent",
-    });
+    const provider = new AnchorProvider(connection, wallet);
 
     this.program = new Program<Privy>(PrivyIdl as any, provider);
   }

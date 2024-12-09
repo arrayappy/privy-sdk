@@ -16,6 +16,7 @@ export async function createUserIx(
     .createUser(args.username, args.encryptedCategories, args.depositLamports)
     .accounts({
       user: accounts.user,
+      // @ts-ignore
       privyUser: privyUserPDA,
       privyConfig: privyConfigPDA,
     })

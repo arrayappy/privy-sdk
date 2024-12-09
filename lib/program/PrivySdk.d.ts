@@ -1,3 +1,4 @@
+/// <reference types="bn.js" />
 import { BN, Program } from "@coral-xyz/anchor";
 import { Connection, PublicKey, Transaction, VersionedTransaction } from "@solana/web3.js";
 import { Privy } from "./idl";

@@ -14,6 +14,7 @@ export async function updatePrivyConfigIx(
     .accounts({
       owner: accounts.owner,
       privyConfig: privyConfigPDA,
+      // @ts-ignore
       systemProgram: SystemProgram.programId,
     })
     .instruction();
